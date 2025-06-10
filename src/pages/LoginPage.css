@@ -1,0 +1,249 @@
+.Login_form{
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px;
+    color: white;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.login{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form__header{
+    text-align: right;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.login label, .form__label {
+  text-align: left;
+}
+
+/* link to로 회원가입 페이지 연결시 주석 해제 */
+/* .form_header a {
+    color: var(--color-point);
+    text-decoration: none;
+    margin-left: 0.25rem;
+} */
+
+.form__title{
+    margin-top: 3rem;
+    margin-bottom: 0.25rem;
+}
+
+.form__subtitle{
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.form__label{
+    display: block;
+    margin-bottom: 1rem;
+    
+}
+
+.form__input{
+    width: 100%;
+    padding: 0.5rem 0.75rem 0.5rem 2.5rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.3rem;
+    box-sizing: border-box;
+}
+
+.form__password-wrapper{
+    position: relative;
+}
+
+.form__toggle{
+    position: absolute;
+    top: 30%;
+    right: 0.75rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.form__options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.form__options label{
+    display: flex;
+    align-items: center;
+}
+
+.form__options input {
+    margin-right: 0.5rem;
+    padding: 0.5rem 0.75rem 0.5rem 2.5rem;
+}
+
+.form__options a {
+    text-decoration: none;
+}
+
+.form__submit{
+    width: 100%;
+    padding: 0.75rem;
+    background-color: var(--color-sub);
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+}
+
+.form__divider{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.form__divider::before,
+.form__divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+}
+
+.form__divider::before{
+    margin-right: 0.75rem;
+}
+
+.form__divider::after {
+    margin-left: 0.75rem;
+}
+
+.form__socials{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.social-btn {
+  flex: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* 브랜드별 아이콘 색상 */
+.social-btn--google svg {
+  color: #4285F4;   /* Google Blue */
+}
+.social-btn--naver svg {
+  color: #03C75A;   /* Naver Green */
+}
+.social-btn--kakao svg {
+  color: #FFCD00;   /* Kakao Yellow */
+}
+
+.social-btn:focus {
+  outline: none;
+}
+
+.name-input-icon {
+  position: absolute;
+  top: 50%;
+  left: 0.75rem;
+  transform: translateY(10%);
+  width: 16px;
+  height: 16px;
+  pointer-events: none;
+}
+
+.email-input-wrapper {
+  position: relative;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.email-input-icon {
+  position: absolute;
+  top: 50%;
+  left: 0.75rem;
+  transform: translateY(10%);
+  width: 16px;
+  height: 16px;
+  pointer-events: none;
+}
+
+.phone-input-wrapper {
+  position: relative;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.phone-input-icon {
+  position: absolute;
+  top: 50%;
+  left: 0.75rem;
+  transform: translateY(10%);
+  width: 16px;
+  height: 16px;
+  pointer-events: none;
+}
+
+.password-input-wrapper {
+  position: relative;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.password-input-icon {
+  position: absolute;
+  top: 50%;
+  left: 0.75rem;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  pointer-events: none;
+}
+/* 눈 토글 */
+.password-toggle-icon {
+  width: 16px;
+  height: 16px;
+  transform: translateY(15%);
+  pointer-events: none;
+}
+
+.retype_password-input-wrapper {
+  position: relative;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.retype_password-input-icon {
+  position: absolute;
+  top: 50%;
+  left: 0.75rem;
+  transform: translateY(20%);
+  width: 16px;
+  height: 16px;
+  pointer-events: none;
+}
+/* 눈 토글 */
+.retype_password-toggle-icon {
+  width: 16px;
+  height: 16px;
+  transform: translateY(70%);
+  pointer-events: none;
+}

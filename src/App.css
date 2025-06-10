@@ -1,0 +1,48 @@
+:root {
+  --color-main: rgb(51,51,51);
+  --color-sub: #EFE5DC;
+  --color-point: rgb(114, 47, 55);
+}
+ 
+/* 글자 크기를 한번에 조정*/
+html {
+  font-size: 16px;  /* 기본 폰트를 16px로 고정 */
+  background-color: var(--color-main);
+}
+
+body {
+  font-size: 1rem;  /* html font-size(16px)를 기준으로 1rem = 16px */
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif; /* 원하시는 기본 폰트 패밀리로 설정 */
+}
+
+
+.app-container {
+    /* padding: 0 50px; */
+    /* padding-bottom: 10px; */
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+  text-decoration: none;  /* 밑줄 없애기 */
+  color: inherit;         /* 부모 컬러를 물려받도록 (원한다면 다른 색 지정) */
+}
+
+/* 호버 시에도 언더라인이 보이지 않게 */
+a:hover {
+  text-decoration: none;
+}
+
+a:focus {
+  outline: none;
+}
+
+button {
+    background : none;
+    border: none;         
+    padding: 0;            
+    outline: none;        
+    cursor: pointer;
+}

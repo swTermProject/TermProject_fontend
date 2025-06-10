@@ -1,0 +1,75 @@
+/* Header1.jsx의 css */
+.Header {
+    top:0;
+    left: 0;
+    right: 0; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 10px 100px;
+    background-color: var(--color-sub);
+    z-index: 1000;
+    color: var(--color-point);
+}
+
+.UnLogo{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.login_button{
+    display: flex;
+    gap: 30px;
+}
+
+/* HomeConent.jsx */
+.Home_content{
+    padding: 50px 120px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.AvailTabel{
+    display: flex;
+    flex:1;
+    margin: 0 auto;
+    gap: 50px;
+}
+
+.Home_Text{
+    color: white;
+    font-size: 1.2rem;
+}
+
+.table-card{
+    justify-content: center;
+    background-color: var(--color-sub);
+    width: fit-content;
+}
+
+.table_img{
+    width: 250px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.reserve_login{
+    display: inline-block;
+    padding: 10px;
+    padding-bottom: 20px;
+    color: var(--color-point);
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.moreTable{
+    display: flex;
+    margin: 0 auto;
+    background-color: var(--color-sub);
+    padding: 15px 100px;
+    border-radius: 50px;
+}
