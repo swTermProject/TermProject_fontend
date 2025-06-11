@@ -8,10 +8,20 @@ export default function Header2() {
 
     const handleLogout = async () => {
         try {
-            await fetch('http://localhost:5000/api/logout', {
+            // 백엔드 실행 경로에 따라 변경
+            const res = await fetch('http://localhost:5001/api/logout', {
                 method: 'POST',
                 headers: { 'Authorization': `Bearer ${token}` }
             });
+            
+            const data = await res.json();
+
+            if(res.ok) {
+                alert(data.message);
+            }
+            else{
+                alert("로그아웃 실패: " + data.message);
+            }
         } catch (err) {
             console.error("Logout API call failed:", err);
         } finally {
