@@ -11,7 +11,6 @@ export default function Header1() {
                 <Link to='/login' className="login">
                     로그인
                 </Link>
-                {/* 링크를 /signup 으로 수정 */}
                 <Link to='/signup' className="login">
                     회원가입
                 </Link>
