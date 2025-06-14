@@ -26,17 +26,17 @@ export default function MyReserve() {
                 setReservations(sorted);
             } else {
                 console.error("예약 정보 로딩 실패:", data.message);
-                // 토큰 만료 등의 경우 로그아웃 처리도 고려할 수 있습니다.
+                
             }
         } catch (err) {
             console.error("예약 정보 로딩 중 오류:", err);
         }
     };
 
-    // 컴포넌트가 처음 렌더링될 때 예약 정보를 불러옵니다.
+   
     useEffect(() => {
         fetchReservations();
-    }, [token]); // 토큰이 변경될 때도 다시 불러옵니다.
+    }, [token]); 
 
     // 예약 취소 핸들러
     const handleDelete = async (reservationId) => {
@@ -53,7 +53,7 @@ export default function MyReserve() {
             
             if (data.success) {
                 alert("예약이 취소되었습니다.");
-                fetchReservations(); // 취소 성공 시 목록을 다시 불러옵니다.
+                fetchReservations();
             } else {
                 alert(`취소 실패: ${data.message}`);
             }
@@ -66,7 +66,7 @@ export default function MyReserve() {
     // 날짜 포맷 함수
     const formatDate = (dateString) => {
         const date = new Date(dateString);
-        // UTC 날짜 문제를 해결하기 위해 타임존 오프셋을 고려
+        
         const timeZoneOffset = date.getTimezoneOffset() * 60000;
         const adjustedDate = new Date(date.getTime() + timeZoneOffset);
         const year = adjustedDate.getFullYear();
@@ -107,7 +107,7 @@ export default function MyReserve() {
                                 <td>
                                     <button
                                         className="deleteButton"
-                                        onClick={() => handleDelete(res.id)} // res.id를 넘겨줍니다.
+                                        onClick={() => handleDelete(res.id)} 
                                     >
                                         예약취소
                                     </button>
