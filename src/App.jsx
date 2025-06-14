@@ -26,7 +26,7 @@ function AppContent() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<LogInPage />} />
-        <Route path="/signup" element={<SignupPage />} /> {/* 이 라우트 추가 */}
+        <Route path="/signup" element={<SignupPage />} /> 
         <Route 
           path="/reservation" 
           element={
@@ -51,7 +51,7 @@ function AppContent() {
 function App() {
   return (
     <BrowserRouter>
-      <AuthProvider> {/* 여기서 앱 전체를 감싸줍니다. */}
+      <AuthProvider> 
         <AppContent />
       </AuthProvider>
     </BrowserRouter>
