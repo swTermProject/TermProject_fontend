@@ -33,7 +33,7 @@ export default function ReserveContent() {
         return `${year}-${month}-${day}`;
     };
 
-    // 1. 날짜나 시간이 변경될 때마다 실행되는 부분 (문제 2 해결)
+    
     useEffect(() => {
         // 날짜와 시간이 모두 선택되었을 때만 API 호출
         if (date && time && token) {
@@ -55,7 +55,7 @@ export default function ReserveContent() {
         }
     }, [date, time, token]);
 
-    // 2. 예약 제출 핸들러 (문제 1 해결)
+    // 2. 예약 제출 핸들러 
     const handleSubmit = async (e) => {
         e.preventDefault();
         if (!date || !time || !selectedLocation || !selectedCapacity || !name || !phone || !cardNumber || !peopleCount) {
@@ -157,7 +157,6 @@ export default function ReserveContent() {
                 <div className="right">
                     {date && time && selectedLocation && selectedCapacity && (
                         <div className="input_form">
-                            {/* ... (이하 정보 입력 필드들은 기존과 유사하게 유지) ... */}
                             <div className="formRow "><label>이름</label><input type="text" value={name} onChange={(e) => setName(e.target.value)} required /></div>
                             <div className="formRow "><label>전화번호</label><input type="tel" value={phone} onChange={(e) => setPhone(e.target.value)} required /></div>
                             <div className="formRow "><label>카드번호</label><input type="text" value={cardNumber} onChange={(e) => setCardNumber(e.target.value)} required /></div>
